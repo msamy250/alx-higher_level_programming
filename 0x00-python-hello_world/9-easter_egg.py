@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-imoport this
+import this
