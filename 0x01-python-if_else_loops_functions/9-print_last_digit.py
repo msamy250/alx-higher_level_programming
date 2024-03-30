@@ -8,5 +8,3 @@ def print_last_digit(number):
   else :
     x = abs(number) % 10
     return (x)
-    
-  
