@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10, 10)
-if number > 0:
-    print(number, "is positive")
-elif number == 0:
-    print(number, "is zero")
-else:
-    print(number, "is negative")
+def element_at(my_list, idx):
+   print(len(my_list))
+   if idx < 0:
+        print("None")
+   elif idx  >= len(my_list):
+        print("None")
+   else :
+        print("Element at index {} is {}".format(idx,my_list[idx]))
