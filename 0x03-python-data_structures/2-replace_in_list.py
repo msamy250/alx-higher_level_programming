@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10, 10)
-if number > 0:
-    print(number, "is positive")
-elif number == 0:
-    print(number, "is zero")
-else:
-    print(number, "is negative")
+def replace_in_list(my_list, idx, element):
+      if idx < 0 or idx >= len(my_list):
+       return my_list
