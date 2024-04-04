@@ -5,8 +5,7 @@ class Square ():
     """Square Class
     Args:
     None
-
+    
     Returns:
-    None
-    """
+    None"""
     pass
