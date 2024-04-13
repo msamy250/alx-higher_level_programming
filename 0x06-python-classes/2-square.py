@@ -10,9 +10,7 @@ class Square:
             """ Construct the class.
         Args:
             size (int): Initial size of the square.
-            """
-        self.__size = size
-    
+            """    
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
