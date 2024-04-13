@@ -29,7 +29,7 @@ class Square:
                 area: returns the current square area. 
             """
             self.area = area ** 2
-             
+
 
 
   
