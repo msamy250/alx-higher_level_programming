@@ -14,7 +14,8 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """ Construct the class.
         Args:
-            size: size of the square (1 side).
+            __size: size of the square (1 side).
+            __position (tuple): position of the square.
             """
         self.__size = size
         self.__position = position
