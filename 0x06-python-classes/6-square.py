@@ -40,7 +40,13 @@ class Square:
 
     @position.setter
     def position(self, value):
-        """Set the new value of position"""
+        """Set the new value of position
+        Args:
+            value (tuple): position of the square.
+
+        Raises:
+            TypeError: position must be a tuple of 2 positive integers
+        """
         if not (isinstance(value, tuple) and len(value) == 2 and
                 all(isinstance(num, int) and num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
