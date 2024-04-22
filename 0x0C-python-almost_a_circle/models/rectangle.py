@@ -3,12 +3,11 @@
 
 from models.base import Base
 
-
 class Rectangle(Base):
     """Class that defines properties of rectangle.
     """
 
-    def __init__(self, width, height, x=0, y=0, id=None):
+    def __init__(self, width, height, x = 0, y = 0, id = None):
         """Construct the class.
         Args:
             width: width of the rectangle.
