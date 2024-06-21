@@ -1,12 +1,11 @@
 #!/usr/bin/node
 /* print first argument converted in integer */
 
-let num = parseInt(process.argv[2])
-if (isNaN(num)) {
-    console.log('Missing number of occurrences');
+const x = Number(process.argv[2]);
+const y = Number(process.argv[3]);
+
+function add (a, b) {
+  return (a + b);
 }
-else{
-    for (let i = 0; i < num; i++){
-        console.log('C is fun');
-    }
-}
+
+console.log(add(x, y));
