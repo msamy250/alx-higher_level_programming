@@ -1,15 +1,15 @@
 #!/usr/bin/node
-/* print first argument converted in integer */
+/* prscript that prints a square */
 
-const num = parseInt(process.argv[2]);
-if (isNaN(num)) {
-  console.log('Missing size');
-} else {
-  for (let i = 0; i < num; i++) {
-    let row = '';
-    for (let j = 0; j < num; j++) {
-      row += 'X';
+const x = 'X';
+if (!isNaN(process.argv[2])) {
+  for (let i = 0; i < process.argv[2]; i++) {
+    let square = '';
+    for (let j = 0; j < process.argv[2]; j++) {
+      square += x;
     }
-    console.log(row);
+    console.log(square);
   }
+} else {
+  console.log('Missing size');
 }
