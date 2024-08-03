@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10, 10)
-if number > 0:
-    print(number, "is positive")
-elif number == 0:
-    print(number, "is zero")
-else:
-    print(number, "is negative")
+
+def print_matrix_integer(matrix=[[]]):
+    if not matrix:
+        return None
+    for x in matrix:
+        if len(x) == 0:
+            print()
+        for y in range(len(x)):
+            print("{:d}".format(x[y]), end="\n" if y is len(x) - 1 else " ")

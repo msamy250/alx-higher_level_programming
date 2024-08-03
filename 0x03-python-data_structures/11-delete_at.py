@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10, 10)
-if number > 0:
-    print(number, "is positive")
-elif number == 0:
-    print(number, "is zero")
-else:
-    print(number, "is negative")
+
+def delete_at(my_list=[], idx=0):
+    if idx < 0 or idx not in range(len(my_list)):
+        return my_list
+
+    del my_list[idx]
+
+    return my_list
